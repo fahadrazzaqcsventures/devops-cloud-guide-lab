@@ -7,7 +7,9 @@ These templates help document **design decisions, trade-offs, and rationale** fo
 ## 1. Basic ADR Template
 
 ```
-# [ADR #] [Title]
+#[Title]
+
+## [ADR ID] 
 
 ## Status
 Proposed / Accepted / Deprecated / Superseded
@@ -28,6 +30,10 @@ Describe the expected impact of the decision: positive and negative, technical d
 - Link to design diagrams
 - Related playbooks
 - Related Terraform/Ansible scripts
+
+## Validation
+
+How this decision will be evaluated.
 
 ## Date
 YYYY-MM-DD
@@ -69,6 +75,10 @@ Document potential failures and mitigations.
 - YAML files
 - Diagrams
 - Incident response notes
+
+## Validation
+
+How this decision will be evaluated.
 
 ## Date
 YYYY-MM-DD
@@ -113,6 +123,10 @@ Business/learning goal, infrastructure context, and constraints
 - Terraform scripts
 - Diagrams
 - Test/validation results
+
+## Validation
+
+How this decision will be evaluated.
 
 ## Date
 YYYY-MM-DD

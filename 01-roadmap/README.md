@@ -8,25 +8,29 @@ This roadmap is designed to take you from **absolute beginner** to **senior DevO
 
 ### Internet & Application Basics
 
-* How the internet works
-* What is a server
-* What is an application
-* Web server vs application server
-* Types of applications (monolith, SOA, microservices)
-* Application lifecycle
-* Client–server architecture
-* Stateless vs stateful systems
-* Monolithic vs microservices architecture
-* High availability vs fault tolerance
-* Scalability vs elasticity
-* Vertical vs horizontal scaling
-* Application support and maintenance
-* Software Development Life Cycle (SDLC)
-* Twelve-Factor App principles
-* Application configuration patterns (env vars, config files, secrets)
-* Backend service flow (request → logic → DB → response)
-* REST API fundamentals
-* What is DevOps (culture, feedback loops, ownership)
+* [How the internet works](../02-theory/00-foundations/01-internet-and-application-basics/01-how-the-internet-works/README.md)
+* [What is a server](../02-theory/00-foundations/01-internet-and-application-basics/02-what-is-a-server/README.md)
+* [What is an application](../02-theory/00-foundations/01-internet-and-application-basics/03-what-is-an-application/README.md)
+* [Web server vs application server](../02-theory/00-foundations/01-internet-and-application-basics/04-web-server-vs-application-server/README.md)
+* [Client–server architecture](../02-theory/00-foundations/01-internet-and-application-basics/05-client–server-architecture/README.md)
+* [Stateless vs stateful systems](../02-theory/00-foundations/01-internet-and-application-basics/06-stateless-vs-stateful-systems/README.md)
+* [Monolithic vs microservices architecture](../02-theory/00-foundations/01-internet-and-application-basics/07-monolithic-vs-microservices-architecture/README.md)
+* [High availability vs fault tolerance](../02-theory/00-foundations/01-internet-and-application-basics/08-high-availability-vs-fault-tolerance/README.md)
+* [Scalability vs elasticity](../02-theory/00-foundations/01-internet-and-application-basics/09-scalability-vs-elasticity/README.md)
+* [Vertical vs horizontal scaling](../02-theory/00-foundations/01-internet-and-application-basics/10-vertical-vs-horizontal-scaling/README.md)
+* [Application support and maintenance](../02-theory/00-foundations/01-internet-and-application-basics/11-application-support-and-maintenance/README.md)
+* [Software Development Life Cycle (SDLC)](../02-theory/00-foundations/01-internet-and-application-basics/12-software-development-life-cycle/README.md)
+* [Twelve-Factor App principles](../02-theory/00-foundations/01-internet-and-application-basics/13-twelve-factor-app-principles/README.md)
+* [Application configuration patterns (env vars, config files, secrets](../02-theory/00-foundations/01-internet-and-application-basics/14-application-configuration-patterns/README.md)
+* [Backend service flow (request → logic → DB → response)](../02-theory/00-foundations/01-internet-and-application-basics/15-backend-service-flow/README.md)
+* [REST API fundamentals](../02-theory/00-foundations/01-internet-and-application-basics/16-rest-api-fundamentals/README.md)
+* [What is DevOps (culture, feedback loops, ownership)](../02-theory/00-foundations/01-internet-and-application-basics/17-what-is-devops/README.md)
+* [What is Virtualization](../02-theory/00-foundations/01-internet-and-application-basics/18-what-is-virtualization/README.md)
+* [What is hypervisor](../02-theory/00-foundations/01-internet-and-application-basics/19-what-is-hypervisor/README.md)
+* [Hypervisor types and architecture](../02-theory/00-foundations/01-internet-and-application-basics/20-hypervisor-types-and-architecture/README.md)
+* [Proxmox control plane, storage, VM networking](../02-theory/00-foundations/01-internet-and-application-basics/21-proxmox-control-plane-storage-vm-networking/README.md)
+* Bridged networking and VM connectivity
+* SSH key-based authentication
 
 ### Operating System Fundamentals
 
