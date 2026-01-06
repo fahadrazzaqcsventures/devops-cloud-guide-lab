@@ -1,179 +1,160 @@
-# DevOps & Cloud Guide + Home Lab
+# DevOps Home Lab
 
-Welcome to the **DevOps Cloud Guide Lab** — a comprehensive, production‑oriented learning repository designed to take you from **zero experience to senior DevOps / Cloud / Platform Engineer level**.
+## Purpose
 
-This repository intentionally combines **theory, hands‑on labs, failure injection, incident response, and architectural decision documentation** — the same disciplines used by mature engineering organizations.
+This home lab is a **production-grade learning and experimentation environment** designed to take you from **zero to senior DevOps / Cloud / Platform Engineer** through disciplined practice.
 
----
-
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-System%20Administration-black?logo=linux)
-![Docker](https://img.shields.io/badge/Docker-Containers-blue?logo=docker)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
-![Ansible](https://img.shields.io/badge/Ansible-Configuration%20Management-red?logo=ansible)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-Automation-success)
-
----
-
-## Who This Repository Is For
-
-* Aspiring **DevOps Engineers / Platform Engineers**
-* **Cloud Engineers** (AWS‑focused, multi‑cloud aware)
-* **Site Reliability Engineers (SREs)**
-* System Administrators transitioning into DevOps
-
-This repository assumes **curiosity, discipline, and consistency**, not prior expertise.
-
----
-
-## Repository Structure (Authoritative)
-
-```
-/devops-cloud-guide-lab/
-│
-├── README.md                     # You are here
-│
-├── 01-roadmap/                   # End‑to‑end DevOps → Senior roadmap
-│   └── README.md
-│
-├── 02-theory/                    # All conceptual foundations
-│   ├── 00-foundations/
-│   │   ├── 01-internet-and-application-basics/
-│   │   └── 02-os-fundamentals/
-│
-├── 03-home-lab/                  # Week‑by‑week hands‑on lab execution
-│   └── week-01-proxmox-baseline/
-│       ├── README.md
-│       ├── 01-build/
-│       ├── 02-incidents/
-│       └── docs/
-│           ├── incidents-reports/
-│           ├── incidents-responses/
-│           ├── decisions/
-│           ├── runbooks/
-│           └── adrs/
-│
-├── templates/                    # Canonical documentation templates
-│   ├── README.md
-│   ├── adr-template.md
-│   ├── decision-template.md
-│   ├── incident-report-template.md
-│   ├── incident-response-template.md
-│   └── runbook-template.md
-```
-
----
-
-## Core Learning Workflow (Non‑Negotiable)
-
-Every topic and every week follows the same **senior‑engineering loop**:
+This is **not a demo lab**.
+This is an **engineering training ground** where every build is followed by:
 
 **theory → build → break → respond → document**
 
-1. **Theory** — Study concepts in `02-theory/` aligned to the roadmap
-2. **Build** — Execute labs in `03-home-lab/`
-3. **Break** — Inject controlled failures intentionally
-4. **Respond** — Recover using calm, methodical diagnosis
-5. **Document** — Produce incidents, responses, runbooks, and ADRs
+The lab intentionally introduces failures so you develop:
 
-If documentation is missing, the work is **not complete**.
-
----
-
-## What Each Major Section Is For
-
-### 1. `01-roadmap/`
-
-Defines the **full journey** from beginner to senior DevOps / Cloud Architect.
-
-Use this to:
-
-* Understand skill dependencies
-* See how tools map to engineering problems
-* Avoid random learning
+* Operational confidence
+* Incident response muscle memory
+* Architecture decision discipline
+* Senior-level reasoning under failure
 
 ---
 
-### 2. `02-theory/`
+## Hardware Overview
 
-All conceptual learning, written to support **real systems**, not exams:
+* **Primary Proxmox Host**: Old laptop (i5 3rd gen, 8GB RAM, 500GB HDD)
+* **Edge / Auxiliary Node**: Raspberry Pi 3 B+
+* **Personal Laptop**: Daily driver (SSH, docs, GitHub)
 
-* Internet, applications, and system thinking
-* Operating systems and Linux internals
-* Networking, scalability, reliability
-* Containers, cloud, Kubernetes, observability
-
-**Rule:** Never build before understanding the theory.
+Proxmox acts as the **control plane** for all lab infrastructure.
 
 ---
 
-### 3. `03-home-lab/`
+## Repository Structure (Home Lab Scope)
 
-The heart of the repository.
+```
+03-home-lab/
+└── week-01-proxmox-baseline/
+    ├── README.md                # Week overview (goals, outcomes)
+    ├── 01-build/                # Step-by-step build execution
+    ├── 02-incidents/             # Failure injection instructions
+    └── docs/
+        ├── incidents-reports/    # What broke
+        ├── incidents-responses/  # How it was fixed
+        ├── decisions/            # Tactical decisions made
+        ├── runbooks/             # Future recovery guides
+        └── adrs/                 # Architectural decisions
+```
 
-Each week contains:
-
-* Explicit build steps
-* Planned failure scenarios
-* Mandatory documentation outputs
-
-Example:
-
-* Week 01 — Proxmox control plane, storage, networking, SSH hardening
-
-Future weeks extend into:
-
-* Linux VM operations
-* Networking & DNS
-* Automation & CI/CD
-* Kubernetes & GitOps
-* Observability & SRE
+Templates for all documentation live in `/templates` and are reused consistently.
 
 ---
 
-### 4. `templates/`
+## How to Use This Lab (Mandatory Order)
 
-Standardized templates for professional documentation:
+Each week **must** be executed in this order:
+
+1. **Study theory** (from `02-theory/`)
+2. **Build infrastructure** (`01-build/`)
+3. **Inject failures intentionally** (`02-incidents/`)
+4. **Recover calmly and methodically**
+5. **Document everything** (docs folders)
+
+Skipping documentation means the week is **not complete**.
+
+---
+
+## Week-by-Week Lab Plan
+
+### Week 01 — Proxmox Baseline & Control Plane
+
+**What We Build**
+
+* [Proxmox host baseline (Update and Stabilize Proxmox Host)](./01-build/01-update-and-stabilize-proxmox-host.md)
+* [SSH Key-Based Access Hardening](./01-build/02-ssh-key-based-access-hardening.md)
+* [Storage validation](./01-build/03-promox-storage-validation.md)
+* [Proxmox Network Baseline](./01-build/04-promox-network-baseline.md)
+
+**Failures Practiced**
+
+* [Control Plane Disruption (pveproxy stopped)](./02-incidents/01-proxmox-control-plane-disruption.md)
+* [Network Lockout (bridge/firewall misconfiguration)](./02-incidents/02-network-lockout-simulation.md)
+
+**Documentation Produced**
 
 * Incident reports
+  * [Proxmox Control Plane Disruption](./docs/01-incident-reports/proxmox-control-plane-disruption.md)
+  * [Network Lockout](./docs/01-incident-reports/network-lockout.md)
+
 * Incident responses
-* Decisions
+  * [Control Plane Disruption](./docs/02-incident-responses/proxmox-control-plane-disruption.md)
+  * [Network Lockout](./docs/02-incident-responses/promox-network-lockout.md)
+
+* Tactical decisions
+  * [Control Plane Service Handling](./docs/03-decisions/proxmox-control-plane-handling.md)
+  * [Network Lockout](./docs/03-decisions/network-lockout.md)
+  * [Directory vs LVM-Thin](./docs/03-decisions/directory-vs-lvm-thin.md)
+
 * Runbooks
-* Architectural Decision Records (ADRs)
+  * [Proxmox Control Plane Outage](./docs/04-runbooks/proxmox-control-plane-outage.md)
+  * [Proxmox Network Lockout Recovery](./docs/04-runbooks/promox-network-lockout-recovery.md)
 
-Using templates enforces **clarity, consistency, and senior‑grade thinking**.
+* ADRs
 
----
-
-## Expected Outcomes
-
-By completing this repository, you will:
-
-* Think in **systems**, not tools
-* Operate Linux, networking, and cloud platforms confidently
-* Recover from outages without panic
-* Explain and justify architectural decisions
-* Possess a **real, reviewable DevOps portfolio**
-
-This is the difference between *knowing tools* and *being an engineer*.
+  * [Proxmox as hypervisor](./docs/05-adrs/why-promox-as-a-hypervisor.md)
+  * [Storage backend choice](./docs/05-adrs/proxmox-storage-backend-selection.md)
+  * [Proxmox Control Plane Separation](./docs/05-adrs/promox-control-plane-separation.md)
+  * [Bridged networking](./docs/05-adrs/promox-bridged-networking-configuration.md)
+  * [Proxmox Network Change Safety](./docs/05-adrs/promox-network-change-safety.md)
+  * [SSH Access Hardening on Proxmox](./docs/05-adrs/ssh-access-hardening-on-proxmox.md)
 
 ---
 
-## Core Philosophy (Read This Twice)
+### Week 02 — Linux VM Fundamentals *(Planned)*
 
-* DevOps is **engineering**, not automation scripts
-* Control planes fail — design and operate accordingly
-* Failure is a **training mechanism**, not a mistake
-* Documentation is part of the system
-* Git is your **single source of truth**
-* Depth beats breadth
+**Build**
+
+* First Ubuntu Server VM
+* Users, permissions, systemd services
+
+**Failures**
+
+* Service not starting
+* Permission denied
+* Disk full
+
+**Docs**
+
+* Linux service recovery runbooks
+* Permission failure incident reports
 
 ---
 
-## Author
+## Documentation Philosophy
 
-**Fahad**
-Aspiring DevOps & Cloud Engineer
+| Document Type     | Purpose                                  |
+| ----------------- | ---------------------------------------- |
+| Incident Report   | Describe the failure objectively         |
+| Incident Response | Exact recovery steps                     |
+| Decision          | Why a specific action was chosen         |
+| Runbook           | How to fix it next time without thinking |
+| ADR               | Long-term architectural reasoning        |
 
-Focused on building production‑grade systems through disciplined learning, failure‑driven practice, and documentation‑first engineering.
+This mirrors how senior engineers work in production.
+
+---
+
+## Completion Standard
+
+A week is complete **only if**:
+
+* You can explain every failure
+* You can recover without panic
+* You can rebuild from scratch
+* You have documentation to prove it
+
+---
+
+## Final Note
+
+This lab is intentionally uncomfortable.
+
+That discomfort is what produces **real DevOps engineers**.

@@ -189,13 +189,6 @@ This mapping is intentional — cloud skills transfer directly.
 
 ---
 
-## Next Step
+## Next Theory Topic
 
-You are now ready to build [**Week 1 hands-on labs**](../../../../03-home-lab/01-promox/week-01-proxmox-baseline/README.md):
-
-* Proxmox baseline configuration
-* Network bridges
-* SSH access
-* First VM creation
-
-This is where theory turns into muscle memory.
+[**Bridged Networking and VM Connectivity**](../22-bridged-networking-and-vm-connectivity/README.md)

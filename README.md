@@ -1,6 +1,8 @@
 # DevOps & Cloud Guide + Home Lab
 
-Welcome to the **DevOps Cloud Guide Lab** — a comprehensive, hands-on roadmap designed to take you from **zero experience to senior DevOps and Cloud Architect level**. This repository combines structured theory, practical labs, failure-driven exercises, and decision documentation.
+Welcome to the **DevOps Cloud Guide Lab** — a comprehensive, production‑oriented learning repository designed to take you from **zero experience to senior DevOps / Cloud / Platform Engineer level**.
+
+This repository intentionally combines **theory, hands‑on labs, failure injection, incident response, and architectural decision documentation** — the same disciplines used by mature engineering organizations.
 
 ---
 
@@ -16,135 +18,162 @@ Welcome to the **DevOps Cloud Guide Lab** — a comprehensive, hands-on roadmap 
 
 ## Who This Repository Is For
 
-* Aspiring **DevOps Engineers / Architects**
-* **Cloud Engineers**
+* Aspiring **DevOps Engineers / Platform Engineers**
+* **Cloud Engineers** (AWS‑focused, multi‑cloud aware)
 * **Site Reliability Engineers (SREs)**
 * System Administrators transitioning into DevOps
 
----
-
-## Repository Overview
-
-This repository is organized to reflect a **progressive, production-oriented learning path**:
-
-### 1. `roadmap/`
-
-Contains the complete **DevOps → Senior Cloud Architect roadmap**, defining the topics and skills you need to master. Use this to understand **what to learn next and how concepts connect**.
-
-### 2. `theory/`
-
-All conceptual learning materials:
-
-* Internet, applications, OS fundamentals
-* Networking, ports, load balancing
-* Automation, scripting, containerization
-* Cloud fundamentals, CI/CD, observability
-
-**Recommendation:** Read each theory file **before performing corresponding lab exercises**.
-
-### 3. `home-lab/`
-
-Week-by-week lab instructions:
-
-* Step-by-step build tasks
-* Failure injection scenarios
-* Portfolio outputs
-
-### 4. `home-lab-architecture/`
-
-Document and diagrams describing your **hardware setup**, network design, and virtualization architecture. Study this before starting any labs to understand your lab’s infrastructure.
-
-### 5. `devops-home-lab-master-plan/`
-
-The **master plan** combining all theory, labs, and incidents. Use this as a **central guide** to coordinate your learning, practice, and documentation.
-
-### 6. `incident-response-playbooks/`
-
-Step-by-step **playbooks for all common failure types**, from Linux services to Kubernetes, CI/CD, networking, and storage. **Break, respond, and recover using these playbooks**.
-
-### 7. `weekly-incident-response-mapping/`
-
-Maps **incident playbooks to each week** of your home lab plan. Before each lab week, review relevant incidents to prepare for failure-driven exercises.
-
-### 8. `adr-templates/`
-
-Document your design decisions to build a **senior-level portfolio**:
-
-* **Basic ADR** — general decisions
-* **Week-Specific ADR** — tied to home lab weeks
-* **Cloud/IaC ADR** — Terraform, Ansible, cloud resources
+This repository assumes **curiosity, discipline, and consistency**, not prior expertise.
 
 ---
 
-## Learning Workflow
+## Repository Structure (Authoritative)
 
-Every week follows the **production-oriented learning loop**:
-
-1. **Theory** — study the relevant concepts in `theory/` and refer to `roadmap/` for context.
-2. **Build** — perform the lab for the week in `home-lab/` following the master plan.
-3. **Break** — intentionally inject failures as described in the lab and playbooks.
-4. **Respond** — use `incident-response-playbooks/` and weekly mappings to recover.
-5. **Document** — create ADRs (`adr-templates/`) and portfolio artifacts (screenshots, scripts, YAMLs, diagrams).
-
-**Portfolio-Driven Mindset:** Every lab week should leave you with **tangible, version-controlled assets** demonstrating operational and architectural skills.
+```
+/devops-cloud-guide-lab/
+│
+├── README.md                     # You are here
+│
+├── 01-roadmap/                   # End‑to‑end DevOps → Senior roadmap
+│   └── README.md
+│
+├── 02-theory/                    # All conceptual foundations
+│   ├── 00-foundations/
+│   │   ├── 01-internet-and-application-basics/
+│   │   └── 02-os-fundamentals/
+│
+├── 03-home-lab/                  # Week‑by‑week hands‑on lab execution
+│   └── week-01-proxmox-baseline/
+│       ├── README.md
+│       ├── 01-build/
+│       ├── 02-incidents/
+│       └── docs/
+│           ├── incidents-reports/
+│           ├── incidents-responses/
+│           ├── decisions/
+│           ├── runbooks/
+│           └── adrs/
+│
+├── templates/                    # Canonical documentation templates
+│   ├── README.md
+│   ├── adr-template.md
+│   ├── decision-template.md
+│   ├── incident-report-template.md
+│   ├── incident-response-template.md
+│   └── runbook-template.md
+```
 
 ---
 
-## Recommended Execution Order
+## Core Learning Workflow (Non‑Negotiable)
 
-1. Review `home-lab-architecture/` to understand your environment.
-2. Start with **PHASE 0: Foundations** (Week 1–4), reading theory first.
-3. Progress **week by week**:
+Every topic and every week follows the same **senior‑engineering loop**:
 
-   * `theory/` → `home-lab/` → break failures → respond → document ADRs.
-4. Use `devops-home-lab-master-plan/` to track your progress and dependencies.
-5. Reference `incident-response-playbooks/` and `weekly-incident-response-mapping/` to guide recovery exercises.
-6. After completing PHASE 1–F, ensure all `ADRs`, playbooks, and lab outputs are **versioned and organized** in the repository.
+**theory → build → break → respond → document**
+
+1. **Theory** — Study concepts in `02-theory/` aligned to the roadmap
+2. **Build** — Execute labs in `03-home-lab/`
+3. **Break** — Inject controlled failures intentionally
+4. **Respond** — Recover using calm, methodical diagnosis
+5. **Document** — Produce incidents, responses, runbooks, and ADRs
+
+If documentation is missing, the work is **not complete**.
+
+---
+
+## What Each Major Section Is For
+
+### 1. `01-roadmap/`
+
+Defines the **full journey** from beginner to senior DevOps / Cloud Architect.
+
+Use this to:
+
+* Understand skill dependencies
+* See how tools map to engineering problems
+* Avoid random learning
+
+---
+
+### 2. `02-theory/`
+
+All conceptual learning, written to support **real systems**, not exams:
+
+* Internet, applications, and system thinking
+* Operating systems and Linux internals
+* Networking, scalability, reliability
+* Containers, cloud, Kubernetes, observability
+
+**Rule:** Never build before understanding the theory.
+
+---
+
+### 3. `03-home-lab/`
+
+The heart of the repository.
+
+Each week contains:
+
+* Explicit build steps
+* Planned failure scenarios
+* Mandatory documentation outputs
+
+Example:
+
+* Week 01 — Proxmox control plane, storage, networking, SSH hardening
+
+Future weeks extend into:
+
+* Linux VM operations
+* Networking & DNS
+* Automation & CI/CD
+* Kubernetes & GitOps
+* Observability & SRE
+
+---
+
+### 4. `templates/`
+
+Standardized templates for professional documentation:
+
+* Incident reports
+* Incident responses
+* Decisions
+* Runbooks
+* Architectural Decision Records (ADRs)
+
+Using templates enforces **clarity, consistency, and senior‑grade thinking**.
 
 ---
 
 ## Expected Outcomes
 
-By completing this repository:
+By completing this repository, you will:
 
-* Master Linux, networking, automation, containerization, CI/CD, Kubernetes, GitOps, cloud fundamentals, observability, and SRE practices.
-* Have a **home lab portfolio** demonstrating practical experience.
-* Be able to **document, analyze, and justify architectural decisions** using ADRs.
-* Develop a **failure-driven operational mindset**, essential for senior DevOps and cloud roles.
+* Think in **systems**, not tools
+* Operate Linux, networking, and cloud platforms confidently
+* Recover from outages without panic
+* Explain and justify architectural decisions
+* Possess a **real, reviewable DevOps portfolio**
 
----
-
-## Core Philosophy & Senior DevOps Mindset
-
-*(Applies across all phases — internalize first, revisit continuously)*
-
-* DevOps is **engineering-focused**, not tool-driven.
-* Master **System Engineering + Delivery Engineering + Reliability Engineering**.
-* Think like a **system architect** — anticipate failure, scale, and cost.
-* **Automation-first mindset**: script everything repetitive.
-* **Scenario-based thinking**: production incidents and interview problem solving.
-* Avoid **tutorial hell**; prioritize **depth over surface-level tool knowledge**.
-* **Engineering impact > tool names on resume**.
-* Git is the **source of truth** — your portfolio reflects your expertise.
-* Maintain **cost awareness** (FinOps).
-* Observability, security, and reliability are **mindsets**, not checkboxes.
+This is the difference between *knowing tools* and *being an engineer*.
 
 ---
 
-## 💼 Why This Repository Matters
+## Core Philosophy (Read This Twice)
 
-* Demonstrates **real DevOps workflows and engineering practices**
-* Shows **hands-on, production-oriented experience**
-* Emphasizes automation, scalability, security, and observability
-* Designed with **interview and recruiter expectations** in mind
-
-This is not a tutorial dump — it is a **career-focused DevOps engineering Guide**.
+* DevOps is **engineering**, not automation scripts
+* Control planes fail — design and operate accordingly
+* Failure is a **training mechanism**, not a mistake
+* Documentation is part of the system
+* Git is your **single source of truth**
+* Depth beats breadth
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Fahad**
 Aspiring DevOps & Cloud Engineer
 
-Focused on building production-grade systems through hands-on learning, automation, and real-world scenarios.
+Focused on building production‑grade systems through disciplined learning, failure‑driven practice, and documentation‑first engineering.

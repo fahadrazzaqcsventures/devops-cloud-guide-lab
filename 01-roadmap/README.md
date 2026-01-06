@@ -29,20 +29,20 @@ This roadmap is designed to take you from **absolute beginner** to **senior DevO
 * [What is hypervisor](../02-theory/00-foundations/01-internet-and-application-basics/19-what-is-hypervisor/README.md)
 * [Hypervisor types and architecture](../02-theory/00-foundations/01-internet-and-application-basics/20-hypervisor-types-and-architecture/README.md)
 * [Proxmox control plane, storage, VM networking](../02-theory/00-foundations/01-internet-and-application-basics/21-proxmox-control-plane-storage-vm-networking/README.md)
-* Bridged networking and VM connectivity
-* SSH key-based authentication
+* [Bridged networking and VM connectivity](../02-theory/00-foundations/01-internet-and-application-basics/22-bridged-networking-and-vm-connectivity/README.md)
+* [SSH key-based authentication](../02-theory/00-foundations/01-internet-and-application-basics/23-ssh-key-based-authentication/README.md)
 
 ### Operating System Fundamentals
 
-* What is an operating system
-* OS as abstraction layer between hardware and applications
-* Tasks of an OS (CPU, memory, file, device, security, networking management)
-* Multi-user and multitasking systems
-* Kernel vs user space
-* System calls vs shell commands
-* Windows vs macOS vs Linux
-* Client OS vs server OS
-* Why Linux is preferred in DevOps
+* [What is an operating system](../02-theory/00-foundations/02-operating-system-fundamentals/01-what-is-an-operating-system/README.md)
+* [OS as abstraction layer between hardware and applications](../02-theory/00-foundations/02-operating-system-fundamentals/02-os-as-abstraction-layer-between-hardware-and-applications/README.md)
+* [Tasks of an OS (CPU, memory, file, device, security, networking management)](../02-theory/00-foundations/02-operating-system-fundamentals/03-tasks-of-an-os/README.md)
+* [Multi-user and multitasking systems](../02-theory/00-foundations/02-operating-system-fundamentals/04-multi-user-and-multitasking-systems/README.md)
+* [Kernel vs user space](../02-theory/00-foundations/02-operating-system-fundamentals/05-kernel-vs-user-space/README.md)
+* [System calls vs shell commands](../02-theory/00-foundations/02-operating-system-fundamentals/06-system-calls-vs-shell-commands/README.md)
+* [Windows vs macOS vs Linux](../02-theory/00-foundations/02-operating-system-fundamentals/07-windows-vs-mac-os%20vs-linux/README.md)
+* [Client OS vs server OS](../02-theory/00-foundations/02-operating-system-fundamentals/08-client-os-vs-server-os/README.md)
+* [Why Linux is preferred in DevOps](../02-theory/00-foundations/02-operating-system-fundamentals/09-why-linux-is-preferred-in-devops/README.md)
 
 ---
 
