@@ -162,7 +162,7 @@ You should be able to explain:
 
 Proceed with:
 
-**Kernel vs User Space**
+[**Kernel vs User Space**](../05-kernel-vs-user-space/README.md)
 
 This will formalize the boundary between:
 

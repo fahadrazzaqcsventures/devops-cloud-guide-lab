@@ -210,9 +210,9 @@ Linux is not optional — it is foundational.
 
 ## Next Step
 
-You are now ready to **transition from theory to practice**:
+You are now ready to **transition from theory to practice**: [**Week 1 hands-on labs**](../../../../03-home-lab/week-01-proxmox-baseline/README.md):
 
-Next topics:
+OR Next theory topic: [**Linux operating system overview**](../../../01-linux-and-system-engineering/01-linux-architecture-and-internals/01-linux-operating-system-overview/README.md)
 
 * Linux filesystem layout
 * Users, groups, and permissions

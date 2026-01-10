@@ -208,15 +208,9 @@ You should be able to explain:
 
 ## Next Topic
 
-**Client OS vs Server OS**
+[**Client OS vs Server OS**](../08-client-os-vs-server-os/README.md)
 
 This will formalize the difference between:
 
 * Systems designed for humans
 * Systems designed for services
-
-Say:
-
-> **“Next: Client OS vs Server OS”**
-
-and continue.

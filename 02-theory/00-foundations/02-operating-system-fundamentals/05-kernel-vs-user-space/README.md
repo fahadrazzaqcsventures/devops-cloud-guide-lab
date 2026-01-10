@@ -223,7 +223,7 @@ Understanding this boundary prevents:
 
 ## Next Topic
 
-**System calls vs shell commands**
+[**System calls vs shell commands**](../06-system-calls-vs-shell-commands/README.md)
 
 This connects everything you’ve learned so far and prepares you for:
 
@@ -231,9 +231,3 @@ This connects everything you’ve learned so far and prepares you for:
 * debugging
 * performance analysis
 * real incident response
-
-Say:
-
-> **“Next: System calls vs shell commands”**
-
-and we continue.

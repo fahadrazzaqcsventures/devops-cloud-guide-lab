@@ -218,7 +218,7 @@ Cloud platforms are **server OS environments by default**.
 
 Next foundational topic:
 
-**Why Linux Is Preferred in DevOps**
+[**Why Linux Is Preferred in DevOps**](../09-why-linux-is-preferred-in-devops/README.md)
 
 This will connect OS theory directly to:
 

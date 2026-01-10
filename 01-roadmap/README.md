@@ -50,14 +50,14 @@ This roadmap is designed to take you from **absolute beginner** to **senior DevO
 
 ### Linux Architecture & Internals
 
-* Linux operating system overview
-* Linux architecture
-* Kernel responsibilities
-* Linux boot process (BIOS/UEFI → GRUB → kernel → init/systemd)
-* Filesystem hierarchy (FHS)
-* File types
-* Inodes
-* Hard links vs soft links
+* [Linux operating system overview](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/01-linux-operating-system-overview/README.md)
+* [Linux architecture](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/02-linux-architecture/README.md)
+* [Kernel responsibilities](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/03-kernel-responsibilities/README.md)
+* [Linux boot process (BIOS/UEFI → GRUB → kernel → init/systemd)](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/04-linux-boot-process/README.md)
+* [Filesystem hierarchy (FHS)](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/05-file-system-hierarchy/README.md)
+* [File types](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/06-file-types/README.md)
+* [Inodes](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/07-inodes/README.md)
+* [Hard links vs soft links](../02-theory/01-linux-and-system-engineering/01-linux-architecture-and-internals/08-hard-links-vs-soft-links/README.md)
 
 ### File, User & Permission Management
 

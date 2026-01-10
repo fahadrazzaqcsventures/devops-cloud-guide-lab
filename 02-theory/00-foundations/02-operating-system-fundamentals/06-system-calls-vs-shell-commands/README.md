@@ -202,12 +202,6 @@ You should be able to:
 
 ## Next Topic
 
-**Windows vs macOS vs Linux**
+[**Windows vs macOS vs Linux**](../07-windows-vs-mac-os%20vs-linux/README.md)
 
 This will explain why Linux dominates servers, containers, and cloud platforms — and why DevOps careers revolve around it.
-
-Say:
-
-> **“Next: Windows vs macOS vs Linux”**
-
-and continue.
